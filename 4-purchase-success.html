@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>4-Purchase</title>
 	<!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -20,6 +20,19 @@
 		mollitia, quia repellendus labore voluptate possimus dolorem aut suscipit odit sequi quasi aperiam omnis
 		tempore.
 	</p>
+
+	<script>
+		dataLayer.push({
+			'event': 'purchase',
+			'currency': 'USD',
+			'value': 20.25,
+			'transaction_id': 'T-000' + Math.round(Math.random()*1000000),
+			'items': [{
+				'item_id':'BOP',
+				'item_name': 'Business Policy'
+			}]
+		});
+	</script>
 
 	<a href="index.html">Index</a>
 

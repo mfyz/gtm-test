@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>3-Payment</title>
 	<!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -22,6 +22,18 @@
 	</p>
 
 	<a href="4-purchase-success.html">Purchase / Success</a>
+
+	<script>
+		dataLayer.push({
+			'event': 'add_payment_info',
+			'currency': 'USD',
+			'value': 20.25,
+			'items': [{
+				'item_id':'BOP',
+				'item_name': 'Business Policy'
+			}]
+		});
+	</script>
 
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNLW7VL"
